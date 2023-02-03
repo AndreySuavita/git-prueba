@@ -1,0 +1,118 @@
+tutorial:
+https://www.youtube.com/watch?v=VdGzPZ31ts8
+
+Atajo:
+Control + alt + t
+
+####Configuración inicial####
+- git --version
+versión del proyecto
+
+- git init
+inicia proyecto
+
+- git config --global user.name "Andrey"
+configurar nombre de usuario
+
+- git config --global user.email andrey93sam@hotmail.com
+configurar correo de usuario
+
+- git config --global core.editor "code --wait"
+configurar VS code como editor de texto
+
+- git config --global -e
+ingresar a las configuraciones
+
+- git config --global core.autocrlf true
+configurar el core.autocrlf (true para Windows, input para Mac)
+
+####comandos basicos#####
+
+-git status
+ver archivos listos para comprometer
+
+-git status -s
+ver archivos listos para comprometer más goma
+
+-git add (archivo para agregar)
+alistar un archivo para ser comprometido
+
+-git add .
+alistar todos los archivos para comprometer
+
+-git add (archivo1) (archivo2)
+alistar dos o más archivos para comprometer
+
+-git commit
+comprometer archivos, i = escribir, esc = salir, ;wq para escribir y quitar
+
+-git commit -m "comentario"
+comprometer archivos directamente
+
+-git diff (Nombredearchivo)
+verificar diferencias del archivo
+
+-git chechout --(nombredearchivo)
+revertir los cambios aplicados en un archivo
+
+-.gitignore
+crear archivo donde se escriben los nombres de las carpetas o archivos que quieren ser ignorados
+
+####comandos para subir o descargar desde el repositorio remoto###
+
+-git push -u origin (master)
+actualiza el repositorio remoto con el repositorio local, en el parentesis se pone la rama
+
+-git pull origin (master)
+actualiza el repositorio local con el repositorio remoto, en el parentesis se pone la rama
+
+-git clone
+descarga un repositorio completo al local desde el remoto
+
+#### ramas #####
+
+-git branch
+ver la rama actual
+
+-git branch (Nombre de nueva rama)
+crear nueva rama
+
+-git checkout (Nombre de la rama)
+cambiar de rama
+
+-git merge (rama2)
+unir rama 2 a la rama 1, se debe estar en la rama master o main
+#### eliminar y mover archivos ####
+
+-rm (Nombre del archivo)
+borrar archivo txt 
+
+-git rm (nombre del archivo)
+elimina el archvo del Stage sin usar git add
+
+-git restore --staged (Nombre del archivo)
+sacar un archivo del Stage, pero no se recupera el archivo
+
+-git restore (Nombre del archivo)
+recuperar el archivo que fue eliminado
+
+-mv (Nombre del archivo) (destino del archivo)
+cambiar de lugar y nombre un archivo, la segunda posicion se cambia el nombre también
+
+-git mv (Nombre del archivo) (destino del archivo)
+cambiar de lugar y nombre un archivo directamente dejandolo en Stage listo
+
+#### versiones ####
+
+-git log
+ver listado de versiones creadas por algun commit
+
+-git checkout (Número del commit)
+regresar a una versión anterior utilizando el número dle commit visto en el log
+
+-git chechout master
+regresar a la version más actualizada
+
+
+
+
