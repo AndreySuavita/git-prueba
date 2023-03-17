@@ -77,6 +77,9 @@ ver la rama actual
 -git branch (Nombre de nueva rama)
 crear nueva rama
 
+-git checkout -b (Nombre de nueva rama)
+Otra forma de crear una rama
+
 -git checkout (Nombre de la rama)
 cambiar de rama
 
@@ -113,6 +116,17 @@ regresar a una versión anterior utilizando el número dle commit visto en el lo
 -git chechout master
 regresar a la version más actualizada
 
+
+##### para descargar nuevo repositorio #####
+
+1. descargar repositorio 
+git clone (link del repositorio)
+
+2. para descargar una rama en particular, se cambia a esa rama
+git checkout (Nombre de la rama existente)
+
+3. descargar los datos de esa rama 
+git pull
 
 
 
